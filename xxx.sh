@@ -1,1 +1,1 @@
-node build/index.js
+npm test
