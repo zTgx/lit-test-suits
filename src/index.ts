@@ -1,8 +1,3 @@
-const world = 'world';
-
-export function hello(who: string = world): string {
-  console.log("xxxxx");
-  return `Hello ${who}! `;
+export function addition(a: number, b: number): number {
+  return a + b;
 }
-
-hello();
