@@ -15,6 +15,10 @@
     "typescript": ">=3.3.1 <4.5.0"
   },
   "scripts": {
-    "test": "cross-env NODE_ENV=local mocha --exit --sort -r ts-node/register 'src/test.ts'"
+    "compile": "tsc",
+    "test": "cross-env NODE_ENV=local mocha --timeout 10000 --exit --sort -r ts-node/register 'src/test.ts'"
+  },
+  "dependencies": {
+    "@polkadot/api": "^10.0.1"
   }
 }
